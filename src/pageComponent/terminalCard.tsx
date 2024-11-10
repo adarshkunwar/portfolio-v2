@@ -1,26 +1,28 @@
 "use client";
 import * as React from "react";
-import { Card, CardDescription, CardHeader } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
 const TerminalCard = () => {
   const [hover, setHover] = useState(false);
-
   return (
     <Card
-      className="w-[350px]"
+      className={cn(
+        "w-[350px] transition-all duration-300 cursor-pointer",
+        hover ? "shadow-lg transform -translate-y-1" : "shadow-md",
+      )}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <CardHeader>
-        <CardDescription>
-          <div
-            className={cn(
-              "flex h-full items-center justify-center transition-all duration-200",
-              hover ? "scale-110" : "scale-100",
-            )}
-          >
+      <CardHeader className="space-y-4">
+        <div
+          className={cn(
+            "flex flex-col items-center justify-center transition-all duration-200 space-y-6",
+            hover ? "scale-105" : "scale-100",
+          )}
+        >
+          <div className="w-48 h-48 relative">
             <svg
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
@@ -28,22 +30,22 @@ const TerminalCard = () => {
             >
               <defs>
                 <linearGradient
-                  id="hover-gradient"
+                  id="terminal-hover-gradient"
                   x1="0%"
                   y1="0%"
                   x2="100%"
                   y2="0%"
                 >
-                  <stop offset="0%" stopColor="purple" />
-                  <stop offset="100%" stopColor="red" />
+                  <stop offset="0%" stopColor="#7C3AED" />
+                  <stop offset="100%" stopColor="#EF4444" />
                 </linearGradient>
               </defs>
               <style>
                 {`
                   .terminal-icon {
-                    fill: ${hover ? "url(#hover-gradient)" : "white"};
-                    stroke: black;
-                    stroke-width: 1;
+                    fill: ${hover ? "url(#terminal-hover-gradient)" : "white"};
+                    stroke: ${hover ? "#1F2937" : "#374151"};
+                    stroke-width: 1.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
                     stroke-miterlimit: 10;
@@ -59,8 +61,28 @@ const TerminalCard = () => {
               <line className="terminal-icon" x1="13" y1="15" x2="17" y2="15" />
             </svg>
           </div>
-        </CardDescription>
+
+          {/* Text content */}
+          <div className="text-center space-y-2">
+            <h2
+              className={cn(
+                "text-2xl font-bold tracking-tight transition-colors duration-200",
+                hover ? "text-purple-600" : "text-gray-900",
+              )}
+            >
+              With Commands
+            </h2>
+          </div>
+        </div>
       </CardHeader>
+
+      {/* Bottom accent line */}
+      <div
+        className={cn(
+          "h-1 w-full transition-all duration-300 rounded-b-lg",
+          hover ? "bg-gradient-to-r from-purple-600 to-red-500" : "bg-gray-200",
+        )}
+      />
     </Card>
   );
 };
