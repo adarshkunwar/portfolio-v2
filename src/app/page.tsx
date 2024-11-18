@@ -17,7 +17,7 @@ const Starter: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-zinc-200 via-zinc-100 to-blue-300 mb-4">
-            Portfolio Playground
+            Welcome to my Portfolio
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-zinc-400">
             Explore my digital universe through your preferred interface

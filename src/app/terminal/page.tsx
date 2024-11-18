@@ -6,7 +6,7 @@ const Page = () => {
           <div className="text-8xl font-extrabold text-yellow-500 mb-4">
             WORK IN PROGRESS
           </div>
-          <p className="text-2xl text-white mb-8">
+          <div className="text-2xl text-white mb-8">
             This section is currently under construction.
             <div>
               You can check my older version of terminal website at{" "}
@@ -16,7 +16,7 @@ const Page = () => {
                 </span>
               </a>
             </div>
-          </p>
+          </div>
         </div>
       </div>
       <h1>Page</h1>
