@@ -1,6 +1,7 @@
 "use client";
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   const dots = useMemo(() => {
@@ -124,16 +125,16 @@ const Hero = () => {
               variants={itemVariants}
               className="flex gap-4 mt-8 justify-center"
             >
-              <motion.button
-                onClick={() => console.log("hi")}
-                variants={buttonVariants}
-                whileHover="hover"
-                whileTap="tap"
-                className="bg-blue-500 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/25"
-              >
-                Contact Me
-              </motion.button>
-
+              <Link href={"/graphical/contact"}>
+                <motion.button
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  whileTap="tap"
+                  className="bg-blue-500 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue-500/25"
+                >
+                  Contact Me
+                </motion.button>
+              </Link>
               <motion.button
                 variants={buttonVariants}
                 whileHover="hover"

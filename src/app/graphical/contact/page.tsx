@@ -18,6 +18,14 @@ const Contact = () => {
           </div>
           <p className="text-2xl text-white mb-8">
             Contact form is currently under development
+            <div>
+              Use this instead{" "}
+              <a href="mailto:adarshkunwarofficial@gmail.com">
+                <span className="text-blue-500">
+                  adarshkunwarofficial@gmail.com
+                </span>
+              </a>
+            </div>
           </p>
         </div>
       </div>
