@@ -1,4 +1,5 @@
 import { Github, ExternalLink, Star, GitFork } from "lucide-react";
+import Image from "next/image";
 
 const Projects = () => {
   const projects = [
@@ -75,7 +76,7 @@ const Projects = () => {
               className="overflow-hidden rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md"
             >
               {/* Project Image */}
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 className="h-48 w-full object-cover"
