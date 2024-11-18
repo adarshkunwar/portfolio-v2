@@ -21,7 +21,9 @@ const SideBar = () => {
 
       {/* Everything else - Bottom Right */}
       <div className="absolute right-8 bottom-8 z-50">
-        <div className="text-white">everything else</div>
+        <Link href={"/graphical/about"} className="text-white">
+          About
+        </Link>
       </div>
     </>
   );
