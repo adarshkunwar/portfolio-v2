@@ -15,26 +15,27 @@ interface ProjectItem {
 const PROJECTS_DATA = {
   work: [
     {
-      title: "Work Project 1",
+      title: "Lopho Abroad",
       description:
-        "Professional project description showcasing enterprise solutions.",
-      imageUrl: "/placeholder1.jpg",
-      link: "#",
-      technologies: ["React", "Node.js", "MongoDB"],
+        "A website for lopho consultancy that helps students study abroad.",
+      imageUrl: "/lopho.png",
+      link: "https://lophoabroad.com/",
+      technologies: ["Next Js", "ORM", "PostgreSQL"],
     },
     {
-      title: "Work Project 2",
-      description: "Enterprise-level application with scalable architecture.",
-      imageUrl: "/placeholder2.jpg",
-      link: "#",
-      technologies: ["Next.js", "TypeScript", "AWS"],
+      title: "Porto - Port your tweets from twitter to bluesky",
+      imageUrl: "/porto.png",
+      link: "https://chromewebstore.google.com/detail/porto-port-your-tweets-to/ckilhjdflnaakopknngigiggfpnjaaop?authuser=2&hl=en",
+      description: "A chrome extension that ports your tweets to Bluesky.",
+      technologies: ["Chrome extension", "Vite", "Typescript"],
     },
     {
-      title: "Work Project 3",
-      description: "Client-facing dashboard with real-time analytics.",
-      imageUrl: "/placeholder1.jpg",
+      title: "Waverly",
+      description:
+        "A chrome extension based on Deso protocol that lets you tip and support creators.",
+      imageUrl: "/waverly.png",
       link: "#",
-      technologies: ["Vue.js", "Python", "PostgreSQL"],
+      technologies: ["Webpack", "React", "Deso", "Blockchain"],
     },
   ],
   personal: [
