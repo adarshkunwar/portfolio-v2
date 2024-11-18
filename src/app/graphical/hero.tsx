@@ -140,6 +140,12 @@ const Hero = () => {
                 whileHover="hover"
                 whileTap="tap"
                 className="border-2 border-white/20 text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10"
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Adarsh_Resume.pdf";
+                  link.download = "Adarsh_Resume.pdf";
+                  link.click();
+                }}
               >
                 Download CV
               </motion.button>
