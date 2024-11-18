@@ -40,18 +40,11 @@ const PROJECTS_DATA = {
   ],
   personal: [
     {
-      title: "Personal Project 1",
-      description: "Innovative side project exploring new technologies.",
-      imageUrl: "/placeholder3.jpg",
-      link: "#",
-      technologies: ["React Native", "Firebase"],
-    },
-    {
-      title: "Personal Project 2",
-      description: "Open-source contribution to the developer community.",
-      imageUrl: "/placeholder4.jpg",
-      link: "#",
-      technologies: ["Svelte", "GraphQL"],
+      title: "Sajilo Report",
+      description: "A report generator that follows the IEEE standard.",
+      link: "https://sajilo-report.vercel.app/",
+      technologies: ["React", "react to pdf", "vitest"],
+      imageUrl: "/sajilo.png",
     },
   ],
 };
