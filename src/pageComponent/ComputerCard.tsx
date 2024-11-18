@@ -9,8 +9,8 @@ const ComputerCard = () => {
   return (
     <Card
       className={cn(
-        "w-[350px] transition-all duration-300 cursor-pointer",
-        hover ? "shadow-lg transform -translate-y-1" : "shadow-md",
+        "w-[350px] cursor-pointer transition-all duration-300",
+        hover ? "-translate-y-1 transform shadow-lg" : "shadow-md",
       )}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -18,12 +18,12 @@ const ComputerCard = () => {
       <CardHeader className="space-y-4">
         <div
           className={cn(
-            "flex flex-col items-center justify-center transition-all duration-200 space-y-6",
+            "flex flex-col items-center justify-center space-y-6 transition-all duration-200",
             hover ? "scale-105" : "scale-100",
           )}
         >
           {/* Icon container */}
-          <div className="w-48 h-48 relative">
+          <div className="relative h-48 w-48">
             <svg
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const ComputerCard = () => {
           </div>
 
           {/* Text content */}
-          <div className="text-center space-y-2">
+          <div className="space-y-2 text-center">
             <h2
               className={cn(
                 "text-2xl font-bold tracking-tight transition-colors duration-200",
@@ -85,7 +85,7 @@ const ComputerCard = () => {
       {/* Bottom accent line */}
       <div
         className={cn(
-          "h-1 w-full transition-all duration-300 rounded-b-lg",
+          "h-1 w-full rounded-b-lg transition-all duration-300",
           hover ? "bg-gradient-to-r from-purple-600 to-red-500" : "bg-gray-200",
         )}
       />

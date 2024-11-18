@@ -7,7 +7,7 @@ const Test = () => {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className="bg-red-300 w-96 h-96"
+      className="h-96 w-96 bg-red-300"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
