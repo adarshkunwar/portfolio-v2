@@ -6,7 +6,7 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div className="bg-[#2D4356]">
+    <div className="bg-[#2D4356] relative">
       <SideBar />
       {children}
     </div>
