@@ -64,7 +64,7 @@ const ProjectCard = ({ project }: { project: ProjectItem }) => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="relative h-[30rem] overflow-hidden group">
+      <div className="relative h-[28rem] overflow-hidden group">
         <Image
           src={project.imageUrl}
           alt={project.title}
