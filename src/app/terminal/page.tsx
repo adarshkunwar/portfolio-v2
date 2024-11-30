@@ -10,9 +10,12 @@ const Page = () => {
             This section is currently under construction.
             <div>
               You can check my older version of terminal website at{" "}
-              <a href=" https://www.adarshkunwar.com.np/" target="_blank">
+              <a
+                href="https://terminal-portfolio-gilt.vercel.app/"
+                target="_blank"
+              >
                 <span className="text-blue-500">
-                  https://www.adarshkunwar.com.np/
+                  https://terminal-portfolio-gilt.vercel.app/
                 </span>
               </a>
             </div>
