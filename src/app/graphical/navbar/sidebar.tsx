@@ -20,7 +20,7 @@ const SideBar = () => {
       </div>
 
       {/* Everything else - Bottom Right */}
-      <div className="absolute right-8 bottom-8 z-50">
+      <div className="absolute right-28 top-8 z-50">
         <Link href={"/graphical/about"} className="text-white">
           About
         </Link>
